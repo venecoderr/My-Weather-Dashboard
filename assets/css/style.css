@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 23px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+#theWeatherHeader{
+    font-family: 'Nabla', sans-serif;
+}
