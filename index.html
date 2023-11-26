@@ -22,9 +22,99 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>theWeather Dashboard</title>
 </head>
-<body>
+<body class="bg-dark">
+  <header class="bg-info p-4 text-light">
+    <h1><span id="theWeatherHeader">theWeather </span>Dashboard</h1>
+  </header>
 
-  <h1><span id="theWeatherHeader">theWeather </span>Dashboard</h1>
+  <main class="row vw-100 wrap">
+    <section class="col-12 col-lg-3 text-light m-3">
+      <form class="mb-3">
+        <section class="mb-3">
+          <label for="citySearch" class="form-label">Search for a city</label>
+          <input type="search" class="form-control" id="searchInput">
+        </section>
+        <button type="submit" class="btn btn-warning w-100" id="searchBtn">Search</button>
+      </form>
+      <section>
+        save
+      </section>
+    </section>
+
+    <section class="col-12 col-lg-8 text-light">
+      <h2>Today<span id="cityDisplay"></span></h2>
+      <section>
+        <section class="card bg-dark text-light m-2 border border-2 border-info">
+          <section class="d-flex m-4">
+            <section>
+              <h5 class="card-title dateDisplay mb-3"></h5>
+              <p class="humidityDisplay"></p>
+              <p class="windDisplay"></p>
+            </section>
+            <section id="tempCard">
+              <img class="iconDisplay" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Icon of current weather">
+              <p class="tempDisplay" id="mainTemp"></p>
+            </section>
+          </section>
+        </section>
+      </section>
+
+
+      <section class="col-12 text-light">
+        <h2>5-day forecast</h2>
+        <section class="row m-2 justify-content-center">
+          <section class="card bg-dark text-light m-2 col-12 col-md-5 col-lg border border-2 border-info">
+            <section class="card-body">
+              <h5 class="dateDisplay"></h5>
+              <img class="iconDisplay" src="" alt="">
+              <p class="tempDisplay"></p>
+              <p class="humidityDisplay"></p>
+              <p class="windDisplay"></p>
+            </section>
+          </section>
+          <section class="card bg-dark text-light m-2 col-12 col-md-5 col-lg border border-2 border-info">
+            <section class="card-body">
+              <h5 class="dateDisplay"></h5>
+              <img class="iconDisplay" src="" alt="">
+              <p class="tempDisplay"></p>
+              <p class="humidityDisplay"></p>
+              <p class="windDisplay"></p>
+            </section>
+          </section>
+          <section class="card bg-dark text-light m-2 col-12 col-md-5 col-lg border border-2 border-info">
+            <section class="card-body">
+              <h5 class="dateDisplay"></h5>
+              <img class="iconDisplay" src="" alt="">
+              <p class="tempDisplay"></p>
+              <p class="humidityDisplay"></p>
+              <p class="windDisplay"></p>
+            </section>
+          </section>
+          <section class="card bg-dark text-light m-2 col-12 col-md-5 col-lg border border-2 border-info">
+            <section class="card-body">
+              <h5 class="dateDisplay"></h5>
+              <img class="iconDisplay" src="" alt="">
+              <p class="tempDisplay"></p>
+              <p class="humidityDisplay"></p>
+              <p class="windDisplay"></p>
+            </section>
+          </section>
+          <section class="card bg-dark text-light m-2 col-12 col-md-5 col-lg border border-2 border-info">
+            <section class="card-body">
+              <h5 class="dateDisplay"></h5>
+              <img class="iconDisplay" src="" alt="">
+              <p class="tempDisplay"></p>
+              <p class="humidityDisplay"></p>
+              <p class="windDisplay"></p>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </main>
+
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
