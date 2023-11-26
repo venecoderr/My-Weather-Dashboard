@@ -25,16 +25,26 @@ h2{
     font-family: 'Nabla', sans-serif;
 }
 
-.tempDisplay{
-    font-size: 2em;
+#cityDisplay{
+    text-transform: capitalize;
 }
 
 #mainTemp{
     font-size: 5em;
 }
 
+.tempDisplay{
+    font-size: 2em;
+}
+
 #tempCard{
     width: 75%;
     display: flex;
     justify-content: right;
+}
+
+.savedSearch{
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: 500;
 }
