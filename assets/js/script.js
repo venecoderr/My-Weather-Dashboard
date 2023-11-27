@@ -62,18 +62,18 @@ function getForecast(locationCallUrl){
 }
 
 //Gets forecast from form
-function getForecastInput(){
+function getCoordinatesForm(){
     cityName.text(' in ' + searchInput.val())
-    let locationCallUrl = 'http://api.openweathermap.org/geo/1.0/direct?q='+searchInput.val()+'&limit=1&appid=24b7933fb89d75b66c49bd25ad80d2cd'
+    let locationCallUrl = 'https://api.openweathermap.org/geo/1.0/direct?q='+searchInput.val()+'&limit=1&appid=24b7933fb89d75b66c49bd25ad80d2cd'
     getForecast(locationCallUrl)
     let savedSearchEl = '<li><button type="submit" class="btn btn-info w-100 savedSearch text-light m-1">'+searchInput.val()+'</button></li>'
     $(savedList).append(savedSearchEl)
 }
  
 //Gets forecast from search history
-function getForecastHistory(historySearch){
+function getCoordinatesHistory(historySearch){
     cityName.text(' in ' + historySearch)
-    let locationCallUrl = 'http://api.openweathermap.org/geo/1.0/direct?q='+historySearch+'&limit=1&appid=24b7933fb89d75b66c49bd25ad80d2cd'
+    let locationCallUrl = 'https://api.openweathermap.org/geo/1.0/direct?q='+historySearch+'&limit=1&appid=24b7933fb89d75b66c49bd25ad80d2cd'
     getForecast(locationCallUrl)
 }
 
@@ -106,14 +106,14 @@ function displaySave() {
 //Handles form requests
 function handleInputRequest(event){
     event.preventDefault()
-    getForecastInput()
+    getCoordinatesForm()
     saveInput()
 }
 
 //Handles history requests
 function handleHistoryRequest(event){
     let historySearch = $(event.target).text()
-    getForecastHistory(historySearch)
+    getCoordinatesHistory(historySearch)
 }
 
 //Initalizing functions
